@@ -13,9 +13,6 @@ class SettingsConstants:
         (OPTION__ENABLED, "Enabled"),
         (OPTION__DISABLED, "Disabled"),
     ]
-    OPTIONS__ONLY_DISABLED = [
-        (OPTION__DISABLED, "Disabled"),
-    ]
     OPTIONS__PROMPT_REQUIRED_DISABLED = [
         (OPTION__PROMPT, "Prompt"),
         (OPTION__REQUIRED, "Required"),
@@ -523,14 +520,7 @@ class SettingsDefinition:
 
 if __name__ == "__main__":
     import json
-    import os
 
-    hostname = os.uname()[1]
-  
-    if hostname == "seedsigner-os":
-        output_file = "/mnt/microsd/settings_definition.json"
-    else:
-        output_file = "settings_definition.json"
-    
+    output_file = "settings_definition.json"
     with open(output_file, 'w') as json_file:
         json.dump(SettingsDefinition.to_dict(), json_file, indent=4)

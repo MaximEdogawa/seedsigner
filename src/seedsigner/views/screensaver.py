@@ -142,7 +142,7 @@ class ScreensaverScreen(LogoScreen):
         with self.renderer.lock:
             try:
                 while True:
-                    if self.buttons.has_any_input() or self.buttons.override_ind:
+                    if self.buttons.has_any_input():
                         return self.stop()
 
                     # Must crop the image to the exact display size
