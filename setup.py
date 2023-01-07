@@ -4,20 +4,20 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="seedsigner",
-    version="0.5.0",
-    author="SeedSigner",
-    author_email="author@example.com",
-    description="Build an offline, airgapped Bitcoin signing device for less than $50!",
+    name="seedener",
+    version="0.0.1",
+    author="MaximEdogawa",
+    author_email="leo@librem.one",
+    description="DIY build an offline, airgapped signing device for Chia Blockchain custody solution!",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/SeedSigner/seedsigner",
+    url="https://github.com/MaximEdogawa/seedener",
     project_urls={
-        "Bug Tracker": "https://github.com/SeedSigner/seedsigner/issues",
+        "Bug Tracker": "https://github.com/MaximEdogawa/seedener/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GPL License",
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
